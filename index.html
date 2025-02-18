@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Four card feature section</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      html {
+        font-size: 14px;
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/output.css" />
+  </head>
+  <body>
+    <main
+      class="xs:mt-[56px] xs:mb-[46px] xs:flex-col xs:gap-[60px] font-poppins mx-auto flex w-auto items-center md:gap-[74px]"
+    >
+      <section
+        class="title__wrapper xs:flex-col xs:gap-200 text-grey-500 xs:w-[316px] flex text-center md:w-[540px]"
+      >
+        <div
+          class="title__wrapper--title text-[1.71429rem] font-[275] tracking-[0.01786rem]"
+        >
+          <h3 class="leading-[140%]">Reliable, efficient delivery</h3>
+          <h1 class="leading-[140%] font-semibold">Powered by Technology</h1>
+        </div>
+        <p
+          class="title__wrapper--desc text-[1.07143rem] leading-[140%] font-normal tracking-[0.00743rem]"
+        >
+          Our Artificial Intelligence powered tools use millions of project data
+          points to ensure that your project is successful
+        </p>
+      </section>
+      <section
+        class="card__wrapper xs:flex-col xs:gap-400 flex md:flex-none md:items-center lg:flex-row"
+      >
+        <div
+          class="card__wrapper--content xs:w-[314px] xs:flex-col xs:gap-400 xs:rounded-[0.57143rem] xs:shadow-[0px_15px_30px_-11px_rgba(131,166,210,0.50)] xs:p-400 border-cyan flex flex-1 items-end border-t-4 md:flex-none xl:w-[350px]"
+        >
+          <div
+            class="card__wrapper--content--title xs:flex-col xs:gap-[0.42857rem] flex"
+          >
+            <h3
+              class="text-grey-500 text-[1.42857rem] leading-[135%] font-semibold"
+            >
+              Supervisor
+            </h3>
+            <p
+              class="text-grey-400 text-[0.92857rem] leading-[160%] font-normal tracking-[0.00643rem]"
+            >
+              Monitors activity to identify project roadblocks
+            </p>
+          </div>
+          <img
+            src="images/icon-supervisor.svg"
+            alt="suppervisor"
+            class="xs:mb-[11.42px]"
+          />
+        </div>
+        <div
+          class="card__wrapper--content--wrapper xs:flex-col xs:gap-400 flex flex-none md:flex-row lg:flex-col"
+        >
+          <div
+            class="card__wrapper--content--wrapper--content xs:w-[314px] xs:flex-col xs:gap-400 xs:rounded-[0.57143rem] xs:shadow-[0px_15px_30px_-11px_rgba(131,166,210,0.50)] xs:p-400 border-red flex items-end border-t-4 md:flex-none xl:w-[350px]"
+          >
+            <div
+              class="card__wrapper--content--title xs:flex-col xs:gap-[0.42857rem] flex"
+            >
+              <h3
+                class="text-grey-500 text-[1.42857rem] leading-[135%] font-semibold"
+              >
+                Team Builder
+              </h3>
+              <p
+                class="text-grey-400 text-[0.92857rem] leading-[160%] font-normal tracking-[0.00643rem]"
+              >
+                Scans our talent network to create the optimal team for your
+                project
+              </p>
+            </div>
+            <img
+              src="images/icon-team-builder.svg"
+              alt="team builder"
+              class="xs:mb-[11.42px]"
+            />
+          </div>
+          <div
+            class="card__wrapper--content--wrapper--content xs:w-[314px] xs:flex-col xs:gap-400 xs:rounded-[0.57143rem] xs:shadow-[0px_15px_30px_-11px_rgba(131,166,210,0.50)] xs:p-400 border-orange flex items-end border-t-4 md:flex-none xl:w-[350px]"
+          >
+            <div
+              class="card__wrapper--content--title xs:flex-col xs:gap-[0.42857rem] flex"
+            >
+              <h3
+                class="text-grey-500 text-[1.42857rem] leading-[135%] font-semibold"
+              >
+                Karma
+              </h3>
+              <p
+                class="text-grey-400 text-[0.92857rem] leading-[160%] font-normal tracking-[0.00643rem]"
+              >
+                Regularly evaluates our talent to ensure quality
+              </p>
+            </div>
+            <img
+              src="images/icon-karma.svg"
+              alt="karma"
+              class="xs:mb-[11.42px]"
+            />
+          </div>
+        </div>
+
+        <div
+          class="card__wrapper--content xs:w-[314px] xs:flex-col xs:gap-400 xs:rounded-[0.57143rem] xs:shadow-[0px_15px_30px_-11px_rgba(131,166,210,0.50)] xs:p-400 border-blue flex flex-none items-end border-t-4 xl:w-[350px]"
+        >
+          <div
+            class="card__wrapper--content--title xs:flex-col xs:gap-[0.42857rem] flex"
+          >
+            <h3
+              class="text-grey-500 text-[1.42857rem] leading-[135%] font-semibold"
+            >
+              Calculator
+            </h3>
+            <p
+              class="text-grey-400 text-[0.92857rem] leading-[160%] font-normal tracking-[0.00643rem]"
+            >
+              Uses data from past projects to provide better delivery estimates
+            </p>
+          </div>
+          <img
+            src="images/icon-calculator.svg"
+            alt="karma"
+            class="xs:mb-[11.42px]"
+          />
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </p>
+    </footer>
+  </body>
+</html>

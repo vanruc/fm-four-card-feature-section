@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+  --color-grey-500: #4d4f62;
+  --color-grey-400: #6a7178;
+  --color-red: #ea5454;
+  --color-cyan: #44d3d2;
+  --color-blue: #549ef2;
+  --color-orange: #fcae4a;
+
+  --font-poppins: "Poppins", serif;
+
+  --breakpoint-xs: 340px;
+  --spacing-500: 40px;
+  --spacing-400: 32px;
+  --spacing-300: 24px;
+  --spacing-200: 16px;
+  --spacing-100: 8px;
+}
