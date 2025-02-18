@@ -531,17 +531,29 @@
   }
 }
 @layer utilities {
-  .static {
-    position: static;
+  .collapse {
+    visibility: collapse;
+  }
+  .relative {
+    position: relative;
   }
   .mx-auto {
     margin-inline: auto;
+  }
+  .block {
+    display: block;
   }
   .contents {
     display: contents;
   }
   .flex {
     display: flex;
+  }
+  .inline-flex {
+    display: inline-flex;
+  }
+  .list-item {
+    display: list-item;
   }
   .table {
     display: table;
@@ -555,11 +567,24 @@
   .flex-none {
     flex: none;
   }
+  .border-collapse {
+    border-collapse: collapse;
+  }
+  .transform {
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .resize {
+    resize: both;
+  }
   .items-center {
     align-items: center;
   }
   .items-end {
     align-items: flex-end;
+  }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
   }
   .border-t-4 {
     border-top-style: var(--tw-border-style);
@@ -637,9 +662,28 @@
   .text-grey-500 {
     color: var(--color-grey-500);
   }
+  .text-red {
+    color: var(--color-red);
+  }
+  .underline {
+    text-decoration-line: underline;
+  }
+  .decoration-red {
+    text-decoration-color: var(--color-red);
+  }
+  .decoration-1 {
+    text-decoration-thickness: 1px;
+  }
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
+  }
+  .hover\:text-red {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-red);
+      }
+    }
   }
   .xs\:mt-\[56px\] {
     @media (width >= 340px) {
@@ -773,6 +817,31 @@
     transform: none;
     animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
   }
+}
+@property --tw-rotate-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: rotateX(0);
+}
+@property --tw-rotate-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: rotateY(0);
+}
+@property --tw-rotate-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: rotateZ(0);
+}
+@property --tw-skew-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: skewX(0);
+}
+@property --tw-skew-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: skewY(0);
 }
 @property --tw-border-style {
   syntax: "*";
